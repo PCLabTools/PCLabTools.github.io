@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>PCLabTools (colvin.app)</title>
+  <meta name="description" content="colvin.app main page">
+  <meta name="author" content="Larry Colvin">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,9 +33,35 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="twelve column" style="margin-top: 5%">
+        <pre><code>
+          #include "content.h"
+
+          Content myContent;
+
+          void main()
+          {
+            if (myContent.exists())
+            {
+              // Display the website content
+              myContent.render();
+            }
+            else
+            {
+              // Apologise for no content and display picture
+              const char* apologyAnimal = "cat";
+              printf("Content has not been created yet. \
+              Here is an apology picture of my %s\n", apologyAnimal);
+              myContent.display_apology(apologyAnimal);
+            }
+          }
+        </code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve column" style="margin-top: 5%">
+        <h4>Content has not been created yet. Here is an apology picture of my cat</h4>
+        <img src="images/billy.jpg" alt="Billy the cat" width="512" style="float:right;"></img>
       </div>
     </div>
   </div>
