@@ -34,34 +34,38 @@
   <div class="container">
     <div class="row">
       <div class="twelve column" style="margin-top: 5%">
-        <pre><code>
-          #include "content.h"
+        <pre><code style="background-color:rgb(50, 47, 47)">
+          <dom style="color:violet">#include</dom> <dom style="color:coral">"content.h"</dom>
 
-          Content myContent;
+          <dom style="color:teal">Content</dom> <dom style="color:lightblue">myContent</dom><dom style="color:white">;</dom>
 
-          void main()
-          {
-            if (myContent.exists())
-            {
-              // Display the website content
-              myContent.render();
-            }
-            else
-            {
-              // Apologise for no content and display picture
-              const char* apologyAnimal = "cat";
-              printf("Content has not been created yet. \
-              Here is an apology picture of my %s\n", apologyAnimal);
-              myContent.display_apology(apologyAnimal);
-            }
-          }
+          <dom style="color:steelblue">void</dom> <dom style="color:goldenrod">main</dom><dom style="color:steelblue">()</dom>
+          <dom style="color:yellow">{</dom>
+            <dom style="color:violet">if</dom> <dom style="color:violet">(</dom><dom style="color:lightblue">myContent</dom><dom style="color:goldenrod">.exists</dom><dom style="color:steelblue">()</dom><dom style="color:violet">)</dom>
+            <dom style="color:yellow">{</dom>
+              <dom style="color:darkgreen">// Display the website content</dom>
+              <dom style="color:lightblue">myContent</dom><dom style="color:goldenrod">.render</dom><dom style="color:violet">()</dom><dom style="color:white">;</dom>
+            <dom style="color:yellow">}</dom>
+            <dom style="color:violet">else</dom>
+            <dom style="color:yellow">{</dom>
+              <dom style="color:darkgreen">// Apologise for having no content and display picture</dom>
+              <dom style="color:steelblue">const char</dom><dom style="color:white">*</dom> <dom style="color:lightblue">apologyAnimal</dom> <dom style="color:white">=</dom> <dom style="color:coral">"cat"</dom><dom style="color:white">;</dom>
+              <dom style="color:goldenrod">printf</dom><dom style="color:violet">(</dom><dom style="color:coral">"Content has not been created yet. \
+              To apologise here is a picture of my</dom> <dom style="color:lightblue">%s</dom><dom style="color:coral">\n"</dom><dom style="color:white">,</dom> <dom style="color:lightblue">apologyAnimal</dom><dom style="color:violet">)</dom><dom style="color:white">;</dom>
+              <dom style="color:lightblue">myContent</dom><dom style="color:goldenrod">.display_apology</dom><dom style="color:violet">(</dom><dom style="color:lightblue">apologyAnimal</dom><dom style="color:violet">)</dom><dom style="color:white">;</dom>
+            <dom style="color:yellow">}</dom>
+          <dom style="color:yellow">}</dom>
         </code></pre>
       </div>
     </div>
     <div class="row">
       <div class="twelve column" style="margin-top: 5%">
-        <h4>Content has not been created yet. Here is an apology picture of my cat</h4>
-        <img src="images/billy.jpg" alt="Billy the cat" width="512" style="float:right;"></img>
+        <h4 style="color:black">Content has not been created yet. To apologise here is a picture of my cat</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve column" style="margin-top: 5%">
+        <img src="images/billy.jpg" alt="Billy the cat" width="512" style="float:left;"></img>
       </div>
     </div>
   </div>
